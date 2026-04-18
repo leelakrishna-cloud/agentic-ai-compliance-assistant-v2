@@ -80,3 +80,35 @@ flowchart TD
     G --> I
     H --> I
 
+Solution Flow
+
+Retrieve → Generate → Validate → Decide → Respond
+
+This is the core design principle of the solution.
+
+Business Value
+Problem
+
+Regulatory and compliance teams often work with fragmented document repositories and require reliable, traceable answers.
+
+Solution
+
+An Agentic AI assistant that combines RAG, validation, and controlled fallback logic.
+
+Impact
+
+Enables:
+
+Trusted decisions
+Explainable AI outputs
+Audit-ready traceability
+Safer use of AI in compliance workflows
+Tech Stack
+Python
+Streamlit
+LangChain
+OpenAI
+FAISS
+PyPDF
+TextBlob
+
