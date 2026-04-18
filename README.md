@@ -9,9 +9,23 @@
 ![Agentic AI](https://img.shields.io/badge/Pattern-Agentic%20AI-indigo)
 ![Governance](https://img.shields.io/badge/Focus-Explainability%20%26%20Governance-teal)
 
+---
+
+## Overview
+
 An enterprise-focused **Agentic AI Compliance Solution** designed to deliver **trusted, explainable, and governed regulatory intelligence**.
 
 This solution goes beyond traditional RAG by introducing a **validation and decision layer** that determines whether a response is fully supported by documents, partially supported, or unsupported before deciding how to respond.
+
+---
+
+## Key Concept
+
+Traditional RAG:  
+Retrieve → Generate → Return  
+
+This Solution:  
+Retrieve → Generate → Validate → Decide → Respond  
 
 ---
 
@@ -66,6 +80,7 @@ Validation Layer
    ↓
 Confidence Score + Source Traceability
 
+```mermaid
 flowchart TD
     A[User Query] --> B[Safe Query Handling]
     B --> C[Retriever Layer<br/>FAISS + Embeddings]
@@ -79,12 +94,16 @@ flowchart TD
     F --> I[Confidence Score + Sources]
     G --> I
     H --> I
+```
 
+---
 Solution Flow
 
 Retrieve → Generate → Validate → Decide → Respond
 
 This is the core design principle of the solution.
+
+---
 
 Business Value
 Problem
@@ -111,47 +130,6 @@ OpenAI
 FAISS
 PyPDF
 TextBlob
-
-
-# Agentic AI Compliance Assistant
-
-## Overview
-This project is an Agentic AI-based compliance assistant.
-
-It uses Retrieval-Augmented Generation (RAG) along with validation and decision logic to provide reliable and explainable answers from regulatory documents.
-
----
-
-## Key Concept
-
-Traditional RAG:
-Retrieve → Generate → Return
-
-This Solution:
-Retrieve → Generate → Validate → Decide → Respond
-
----
-
-## How It Works
-
-Step 1: Retrieve relevant content from documents  
-Step 2: Generate answer strictly from document  
-Step 3: Validate answer using LLM  
-Step 4: Decide response type:
-    - SUPPORTED → Return document answer
-    - PARTIAL → Combine document + AI explanation
-    - UNSUPPORTED → Use AI fallback
-Step 5: Return response with confidence score and sources  
-
----
-
-## Features
-
-- Document-based answers
-- Validation layer (SUPPORTED / PARTIAL / UNSUPPORTED)
-- Confidence scoring
-- Controlled AI fallback
-- Source traceability
 
 ---
 
