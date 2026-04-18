@@ -1,31 +1,82 @@
 # Agentic AI Compliance Assistant
 
-An enterprise-grade Agentic AI system designed for regulatory and compliance use cases.
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+![Streamlit](https://img.shields.io/badge/UI-Streamlit-red)
+![LangChain](https://img.shields.io/badge/Framework-LangChain-green)
+![FAISS](https://img.shields.io/badge/VectorDB-FAISS-orange)
+![OpenAI](https://img.shields.io/badge/LLM-OpenAI-black)
+![RAG](https://img.shields.io/badge/Architecture-RAG-purple)
+![Agentic AI](https://img.shields.io/badge/Pattern-Agentic%20AI-indigo)
+![Governance](https://img.shields.io/badge/Focus-Explainability%20%26%20Governance-teal)
 
-## 🔹 Key Features
-- Retrieval-Augmented Generation (RAG)
-- Document validation (SUPPORTED / PARTIAL / UNSUPPORTED)
-- Confidence scoring
-- Controlled AI fallback
-- Explainable AI outputs
+An enterprise-focused **Agentic AI Compliance Solution** designed to deliver **trusted, explainable, and governed regulatory intelligence**.
 
-## 🔹 Architecture
-Retrieve → Generate → Validate → Decide → Respond
+This solution goes beyond traditional RAG by introducing a **validation and decision layer** that determines whether a response is fully supported by documents, partially supported, or unsupported before deciding how to respond.
 
-## 🔹 Tech Stack
-- Python
-- Streamlit
-- LangChain
-- FAISS
-- OpenAI
+---
 
-## 🔹 Use Cases
-- AML / KYC / CDD queries
-- Regulatory intelligence
-- Compliance support systems
+## Key Features
 
-## 🔹 How to Run
+- **Retrieval-Augmented Generation (RAG)** over regulatory/compliance PDFs
+- **Strict document-grounded answering**
+- **Validation layer** to classify responses as:
+  - `SUPPORTED`
+  - `PARTIAL`
+  - `UNSUPPORTED`
+- **Confidence scoring** based on retrieval quality
+- **Controlled AI fallback** for unsupported or partially supported queries
+- **Explainable outputs** with source references and optional retrieved context
 
-```bash
-pip install -r requirements.txt
-streamlit run app.py
+---
+
+## Why this is Agentic AI
+
+This is called an **Agentic AI solution** because the system does not simply retrieve and answer.
+
+It performs a sequence of autonomous steps:
+
+1. **Retrieves** relevant document evidence
+2. **Generates** a strict document-grounded answer
+3. **Validates** whether the answer is actually supported
+4. **Decides** whether to:
+   - return a document-based answer
+   - blend with AI explanation
+   - fall back to AI-assisted insight
+5. **Responds** with confidence and traceability
+
+This introduces **decision-making, control, and governed behavior**, which are essential in compliance environments.
+
+---
+
+## Architecture Overview
+
+```text
+User Query
+   ↓
+Safe Query Handling
+   ↓
+Document Retrieval (FAISS + Embeddings)
+   ↓
+Strict Answer Generation
+   ↓
+Validation Layer
+   ├── SUPPORTED   → Document-Based Response
+   ├── PARTIAL     → Blend Document + AI Explanation
+   └── UNSUPPORTED → AI-Assisted Fallback
+   ↓
+Confidence Score + Source Traceability
+
+flowchart TD
+    A[User Query] --> B[Safe Query Handling]
+    B --> C[Retriever Layer<br/>FAISS + Embeddings]
+    C --> D[Strict Answer Generator<br/>Document-Grounded]
+    D --> E[Validation Layer]
+
+    E -->|SUPPORTED| F[Document-Based Response]
+    E -->|PARTIAL| G[Blend Document + AI Explanation]
+    E -->|UNSUPPORTED| H[AI-Assisted Fallback]
+
+    F --> I[Confidence Score + Sources]
+    G --> I
+    H --> I
+
