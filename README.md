@@ -112,3 +112,88 @@ FAISS
 PyPDF
 TextBlob
 
+
+# Agentic AI Compliance Assistant
+
+## Overview
+This project is an Agentic AI-based compliance assistant.
+
+It uses Retrieval-Augmented Generation (RAG) along with validation and decision logic to provide reliable and explainable answers from regulatory documents.
+
+---
+
+## Key Concept
+
+Traditional RAG:
+Retrieve → Generate → Return
+
+This Solution:
+Retrieve → Generate → Validate → Decide → Respond
+
+---
+
+## How It Works
+
+Step 1: Retrieve relevant content from documents  
+Step 2: Generate answer strictly from document  
+Step 3: Validate answer using LLM  
+Step 4: Decide response type:
+    - SUPPORTED → Return document answer
+    - PARTIAL → Combine document + AI explanation
+    - UNSUPPORTED → Use AI fallback
+Step 5: Return response with confidence score and sources  
+
+---
+
+## Features
+
+- Document-based answers
+- Validation layer (SUPPORTED / PARTIAL / UNSUPPORTED)
+- Confidence scoring
+- Controlled AI fallback
+- Source traceability
+
+---
+
+## Tech Stack
+
+- Python
+- Streamlit
+- LangChain
+- FAISS
+- OpenAI
+
+---
+
+## How to Run
+
+1. Install dependencies:
+   pip install -r requirements.txt
+
+2. Set API key:
+   export OPENAI_API_KEY="your_api_key"
+
+3. Add PDF files to:
+   /content/data
+
+4. Run application:
+   streamlit run app.py
+
+---
+
+## Demo Examples
+
+Example 1:
+Query: What is Customer Due Diligence?
+Result: Document-based answer (SUPPORTED)
+
+Example 2:
+Query: What is Model Context Protocol?
+Result: AI-assisted fallback (UNSUPPORTED)
+
+---
+
+## Author
+
+Leela Krishna.T
+Director | Data & AI/ML | Agentic AI | Compliance Systems
