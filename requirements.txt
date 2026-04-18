@@ -1,7 +1,15 @@
+
+---
+
+## requirements.txt
+
+```txt
 streamlit
 langchain
 langchain-community
 langchain-openai
+langchain-text-splitters
 faiss-cpu
 textblob
 pypdf
+openai
