@@ -80,6 +80,10 @@ Validation Layer
    ↓
 Confidence Score + Source Traceability
 
+---
+
+## **Architecture Diagra**
+
 ```mermaid
 flowchart TD
     A[User Query] --> B[Safe Query Handling]
@@ -97,6 +101,7 @@ flowchart TD
 ```
 
 ---
+
 Solution Flow
 
 Retrieve → Generate → Validate → Decide → Respond
@@ -118,10 +123,10 @@ Impact
 
 Enables:
 
-Trusted decisions
-Explainable AI outputs
-Audit-ready traceability
-Safer use of AI in compliance workflows
+---
+
+## Tech Stack
+
 Tech Stack
 Python
 Streamlit
@@ -130,16 +135,6 @@ OpenAI
 FAISS
 PyPDF
 TextBlob
-
----
-
-## Tech Stack
-
-- Python
-- Streamlit
-- LangChain
-- FAISS
-- OpenAI
 
 ---
 
@@ -168,6 +163,11 @@ Result: Document-based answer (SUPPORTED)
 Example 2:
 Query: What is Model Context Protocol?
 Result: AI-assisted fallback (UNSUPPORTED)
+
+Scenario2-AI-Assisted Insight
+![Document-Based Response](Scenario1-Document Based.png)
+
+![AI-Assisted Insight](Scenario2-AI-Assisted Insight.png)
 
 ---
 
