@@ -1,4 +1,4 @@
-# Agentic AI Compliance Assistant
+# Agentic AI Compliance Assistant v2
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![Streamlit](https://img.shields.io/badge/UI-Streamlit-red)
