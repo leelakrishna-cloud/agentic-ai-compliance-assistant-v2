@@ -77,6 +77,27 @@ This introduces **decision-making, control, and governance**, which are critical
 
 ---
 
+## Architecture Diagram
+
+```mermaid
+flowchart TD
+
+A[User Query] --> B[Safe Query Handling]
+B --> C[Retriever Layer<br/>FAISS + Embeddings]
+C --> D[Strict Answer Generator<br/>Document-Grounded]
+D --> E{Validation Layer}
+
+E -->|SUPPORTED| F[Document-Based Response]
+E -->|PARTIAL| G[Blend Document + AI Explanation]
+E -->|UNSUPPORTED| H[AI-Assisted Fallback]
+
+F --> I[Confidence + Sources]
+G --> I
+H --> I
+```
+
+---
+
 ## Solution Flow
 
 Retrieve → Generate → Validate → Decide → Respond  
