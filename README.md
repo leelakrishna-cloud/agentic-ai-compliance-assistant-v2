@@ -74,12 +74,12 @@ flowchart TD
 
 A[User Query] --> B[Safe Query Handling]
 B --> C[Retrieval Layer<br/>FAISS + Embeddings]
-C --> D[Strict Answer Generator<br/>Document-Grounded]
+C --> D[Document-Grounded Response Generator]
 D --> E{Validation<br/>Support Classification}
 
 E -->|SUPPORTED| F[Document-Based Response]
-E -->|PARTIAL| G[Blend Document + AI Explanation]
-E -->|UNSUPPORTED| H[AI-Assisted Fallback]
+E -->|PARTIAL| G[Blended Response<br/>Document + AI]
+E -->|UNSUPPORTED| H[AI-Assisted Response]
 
 F --> I[Confidence Score + Source Traceability]
 G --> I
@@ -87,6 +87,7 @@ H --> I
 ```
 
 ---
+
 
 ## Why this is Agentic AI
 
