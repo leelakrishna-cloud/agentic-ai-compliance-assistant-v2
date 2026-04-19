@@ -182,4 +182,6 @@ Below screenshots illustrate system behavior across different validation outcome
 ## Author
 
 **Leela Krishna.T**  
-Director | Data & AI/ML | Agentic AI | Compliance Systems
+Director | Data & AI/ML | Agentic AI | Compliance Systems  
+
+Focused on building reliable, explainable, and enterprise-grade AI solutions.
