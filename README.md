@@ -167,10 +167,10 @@ Query: What is Model Context Protocol?
 ## Demo Screenshots
 
 ### Document-Based Response
-![Document-Based Response](Scenario1-Document Based.png)
+![Document-Based Response](Scenario1-Document%20Based.jpg)
 
 ### AI-Assisted Insight
-![AI-Assisted Insight](Scenario2-AI-Assisted Insight.png)
+![AI-Assisted Insight](Scenario2-AI-Assisted%20Insight.jpg)
 
 ---
 
