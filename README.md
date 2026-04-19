@@ -73,7 +73,9 @@ This introduces **decision-making, control, and governance**, which are critical
        ├── PARTIAL     → Blend Document + AI Explanation
        └── UNSUPPORTED → AI-Assisted Fallback
        ↓
-    Confidence Score + Source Traceability
+    Confidence + Sources
+
+  Designed for compliance use cases where accuracy, traceability, and controlled AI behavior are critical.
 
 ---
 
