@@ -154,13 +154,15 @@ Agentic AI system with validation and controlled decision logic
 
 ## Demo Examples
 
-**Example 1**  
-Query: What is Customer Due Diligence?  
-→ Document-based answer (SUPPORTED)
+These examples demonstrate how the system differentiates between supported and unsupported queries and applies controlled response strategies.
 
-**Example 2**  
+**Example 1 — Document-Based Response (SUPPORTED)**  
+Query: What is Customer Due Diligence?  
+→ Response generated strictly from document evidence  
+
+**Example 2 — AI-Assisted Insight (UNSUPPORTED)**  
 Query: What is Model Context Protocol?  
-→ AI-assisted fallback (UNSUPPORTED)
+→ Response generated using controlled AI-assisted fallback  
 
 ---
 
