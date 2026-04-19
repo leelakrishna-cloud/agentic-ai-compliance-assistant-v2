@@ -168,11 +168,14 @@ Query: What is Model Context Protocol?
 
 ## Demo Screenshots
 
-### Document-Based Response
+Below screenshots illustrate system behavior across different validation outcomes:
+
+### Scenario 1 — Document-Based Response (SUPPORTED)
 ![Document-Based Response](Scenario1-Document%20Based.jpg)
 
-### AI-Assisted Insight
+### Scenario 2 — AI-Assisted Insight (UNSUPPORTED)
 ![AI-Assisted Insight](Scenario2-AI-Assisted%20Insight.jpg)
+
 
 ---
 
