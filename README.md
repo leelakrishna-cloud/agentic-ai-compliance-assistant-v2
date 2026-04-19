@@ -100,7 +100,7 @@ Instead, it follows a sequence of controlled steps:
 - Decides the appropriate response strategy
 - Returns the response with confidence and traceability
 
-This introduces **decision-making, control, and governance** which are critical in compliance environments.
+This introduces **decision-making, control, and governance**, which are critical in compliance environments.
 
 ---
 
