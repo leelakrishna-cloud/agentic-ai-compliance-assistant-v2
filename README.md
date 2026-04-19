@@ -92,13 +92,13 @@ H --> I
 
 This solution is called **Agentic AI** because it does not simply retrieve and answer.
 
-It performs a sequence of controlled steps:
+Instead, it follows a sequence of controlled steps:
 
-- Retrieves document evidence
-- Generates a strict answer
-- Validates answer support
-- Decides the response strategy
-- Responds with confidence and traceability
+- Retrieves relevant document evidence
+- Generates a strict document-grounded answer
+- Validates whether the answer is supported
+- Decides the appropriate response strategy
+- Returns the response with confidence and traceability
 
 This introduces **decision-making, control, and governance** which are critical in compliance environments.
 
