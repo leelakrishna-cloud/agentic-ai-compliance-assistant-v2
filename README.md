@@ -107,16 +107,16 @@ This introduces **decision-making, control, and governance**, which are critical
 ## Business Value
 
 **Problem**  
-Fragmented regulatory documents and low trust in AI outputs
+Fragmented regulatory documents and low trust in AI outputs  
 
 **Solution**  
-Agentic AI system with validation and controlled decision logic
+Agentic AI system with validation and controlled decision logic  
 
 **Impact**
-- Trusted decision-making
-- Explainable AI
-- Audit-ready traceability
-- Reduced hallucination risk
+- Trusted decision-making  
+- Explainable and auditable AI outputs  
+- Audit-ready traceability  
+- Reduced hallucination risk  
 
 ---
 
