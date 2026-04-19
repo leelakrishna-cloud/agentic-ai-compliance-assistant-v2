@@ -12,7 +12,7 @@
 
 ## Overview
 
-An enterprise-focused **Agentic AI Compliance Solution** designed to deliver **trusted, explainable, and governed regulatory intelligence**.
+An enterprise-grade **Agentic AI Compliance Solution** designed to deliver **trusted, explainable, and governed regulatory intelligence for compliance and risk environments**.
 
 This solution enhances traditional RAG by introducing a validation and decision layer, ensuring responses are reliable, traceable, and aligned with compliance requirements.
 
@@ -26,7 +26,7 @@ Designed for compliance use cases where accuracy, traceability, and controlled A
 Retrieve → Generate → Return
 
 **Agentic AI Flow:**  
-Retrieve → Generate → Validate → Decide → Respond
+Retrieve → Generate → Validate → Decide → Govern → Respond
 
 ---
 
