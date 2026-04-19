@@ -1,13 +1,12 @@
 # Agentic AI Compliance Assistant v2
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
-![Streamlit](https://img.shields.io/badge/UI-Streamlit-red)
-![LangChain](https://img.shields.io/badge/Framework-LangChain-green)
-![FAISS](https://img.shields.io/badge/VectorDB-FAISS-orange)
-![OpenAI](https://img.shields.io/badge/LLM-OpenAI-black)
-![RAG](https://img.shields.io/badge/Architecture-RAG-purple)
-![Agentic AI](https://img.shields.io/badge/Pattern-Agentic%20AI-indigo)
-![Governance](https://img.shields.io/badge/Focus-Explainability%20%26%20Governance-teal)
+![Streamlit](https://img.shields.io/badge/Streamlit-UI-red)
+![LangChain](https://img.shields.io/badge/LangChain-Framework-green)
+![OpenAI](https://img.shields.io/badge/OpenAI-LLM-black)
+![FAISS](https://img.shields.io/badge/FAISS-Vector%20DB-orange)
+![PyPDF](https://img.shields.io/badge/PyPDF-Document%20Loader-lightgrey)
+![TextBlob](https://img.shields.io/badge/TextBlob-NLP-yellow)
 
 ---
 
@@ -15,163 +14,146 @@
 
 An enterprise-focused **Agentic AI Compliance Solution** designed to deliver **trusted, explainable, and governed regulatory intelligence**.
 
-This solution goes beyond traditional RAG by introducing a **validation and decision layer** that determines whether a response is fully supported by documents, partially supported, or unsupported before deciding how to respond.
+This solution enhances traditional RAG by introducing a **validation and decision layer**, ensuring responses are reliable, traceable, and aligned with compliance requirements.
 
 ---
 
 ## Key Concept
 
-Traditional RAG:  
+**Traditional RAG:**  
 Retrieve → Generate → Return  
 
-This Solution:  
+**This Solution:**  
 Retrieve → Generate → Validate → Decide → Respond  
 
 ---
 
 ## Key Features
 
-- **Retrieval-Augmented Generation (RAG)** over regulatory/compliance PDFs
-- **Strict document-grounded answering**
-- **Validation layer** to classify responses as:
+- Retrieval-Augmented Generation (RAG) over regulatory PDFs  
+- Strict document-grounded answering  
+- Validation layer:
   - `SUPPORTED`
   - `PARTIAL`
   - `UNSUPPORTED`
-- **Confidence scoring** based on retrieval quality
-- **Controlled AI fallback** for unsupported or partially supported queries
-- **Explainable outputs** with source references and optional retrieved context
+- Confidence scoring  
+- Controlled AI fallback  
+- Explainable outputs with source traceability  
 
 ---
 
 ## Why this is Agentic AI
 
-This is called an **Agentic AI solution** because the system does not simply retrieve and answer.
+This solution is called **Agentic AI** because it does not simply retrieve and answer.
 
-It performs a sequence of autonomous steps:
+It performs a sequence of controlled steps:
 
-1. **Retrieves** relevant document evidence
-2. **Generates** a strict document-grounded answer
-3. **Validates** whether the answer is actually supported
-4. **Decides** whether to:
-   - return a document-based answer
-   - blend with AI explanation
-   - fall back to AI-assisted insight
-5. **Responds** with confidence and traceability
+1. Retrieves document evidence  
+2. Generates a strict answer  
+3. Validates answer support  
+4. Decides response strategy  
+5. Responds with confidence and traceability  
 
-This introduces **decision-making, control, and governed behavior**, which are essential in compliance environments.
+This introduces **decision-making, control, and governance**, which are critical in compliance environments.
 
 ---
 
 ## Architecture Overview
 
-```text
-User Query
-   ↓
-Safe Query Handling
-   ↓
-Document Retrieval (FAISS + Embeddings)
-   ↓
-Strict Answer Generation
-   ↓
-Validation Layer
-   ├── SUPPORTED   → Document-Based Response
-   ├── PARTIAL     → Blend Document + AI Explanation
-   └── UNSUPPORTED → AI-Assisted Fallback
-   ↓
-Confidence Score + Source Traceability
+    User Query
+       ↓
+    Safe Query Handling
+       ↓
+    Document Retrieval (FAISS + Embeddings)
+       ↓
+    Strict Answer Generation
+       ↓
+    Validation Layer
+       ├── SUPPORTED   → Document-Based Response
+       ├── PARTIAL     → Blend Document + AI Explanation
+       └── UNSUPPORTED → AI-Assisted Fallback
+       ↓
+    Confidence Score + Source Traceability
 
 ---
 
-## **Architecture Diagra**
+## Solution Flow
 
-```mermaid
-flowchart TD
-    A[User Query] --> B[Safe Query Handling]
-    B --> C[Retriever Layer<br/>FAISS + Embeddings]
-    C --> D[Strict Answer Generator<br/>Document-Grounded]
-    D --> E[Validation Layer]
-
-    E -->|SUPPORTED| F[Document-Based Response]
-    E -->|PARTIAL| G[Blend Document + AI Explanation]
-    E -->|UNSUPPORTED| H[AI-Assisted Fallback]
-
-    F --> I[Confidence Score + Sources]
-    G --> I
-    H --> I
-```mermaid
+Retrieve → Generate → Validate → Decide → Respond  
 
 ---
 
-Solution Flow
+## Business Value
 
-Retrieve → Generate → Validate → Decide → Respond
+**Problem**  
+Fragmented regulatory documents and low trust in AI outputs  
 
-This is the core design principle of the solution.
+**Solution**  
+Agentic AI system with validation and controlled decision logic  
 
----
-
-Business Value
-Problem
-
-Regulatory and compliance teams often work with fragmented document repositories and require reliable, traceable answers.
-
-Solution
-
-An Agentic AI assistant that combines RAG, validation, and controlled fallback logic.
-
-Impact
-
-Enables:
+**Impact**
+- Trusted decision-making  
+- Explainable AI  
+- Audit-ready traceability  
+- Reduced hallucination risk  
 
 ---
 
 ## Tech Stack
 
-Tech Stack
-Python
-Streamlit
-LangChain
-OpenAI
-FAISS
-PyPDF
-TextBlob
+- Python  
+- Streamlit  
+- LangChain  
+- OpenAI  
+- FAISS  
+- PyPDF  
+- TextBlob  
 
 ---
 
 ## How to Run
 
-1. Install dependencies:
-   pip install -r requirements.txt
+1. Install dependencies  
 
-2. Set API key:
-   export OPENAI_API_KEY="your_api_key"
+       pip install -r requirements.txt  
 
-3. Add PDF files to:
-   /content/data
+2. Set API key  
 
-4. Run application:
-   streamlit run app.py
+       export OPENAI_API_KEY="your_api_key"  
+
+3. Add PDFs to  
+
+       /content/data  
+
+4. Run app  
+
+       streamlit run app.py  
 
 ---
 
 ## Demo Examples
 
-Example 1:
-Query: What is Customer Due Diligence?
-Result: Document-based answer (SUPPORTED)
+**Example 1**  
+Query: What is Customer Due Diligence?  
+→ Document-based answer (SUPPORTED)
 
-Example 2:
-Query: What is Model Context Protocol?
-Result: AI-assisted fallback (UNSUPPORTED)
+**Example 2**  
+Query: What is Model Context Protocol?  
+→ AI-assisted fallback (UNSUPPORTED)
 
-Scenario2-AI-Assisted Insight
+---
+
+## Demo Screenshots
+
+### Document-Based Response
 ![Document-Based Response](Scenario1-Document Based.png)
 
+### AI-Assisted Insight
 ![AI-Assisted Insight](Scenario2-AI-Assisted Insight.png)
 
 ---
 
 ## Author
 
-Leela Krishna.T
+**Leela Krishna.T**  
 Director | Data & AI/ML | Agentic AI | Compliance Systems
