@@ -88,20 +88,19 @@ H --> I
 
 ---
 
-
 ## Why this is Agentic AI
 
 This solution is called **Agentic AI** because it does not simply retrieve and answer.
 
 It performs a sequence of controlled steps:
 
-1. Retrieves document evidence
-2. Generates a strict answer
-3. Validates answer support
-4. Decides response strategy
-5. Responds with confidence and traceability
+- Retrieves document evidence
+- Generates a strict answer
+- Validates answer support
+- Decides the response strategy
+- Responds with confidence and traceability
 
-This introduces **decision-making, control, and governance**, which are critical in compliance environments.
+This introduces **decision-making, control, and governance** which are critical in compliance environments.
 
 ---
 
