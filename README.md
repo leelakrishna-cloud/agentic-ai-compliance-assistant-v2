@@ -14,47 +14,33 @@
 
 An enterprise-focused **Agentic AI Compliance Solution** designed to deliver **trusted, explainable, and governed regulatory intelligence**.
 
-This solution enhances traditional RAG by introducing a **validation and decision layer**, ensuring responses are reliable, traceable, and aligned with compliance requirements.
+This solution enhances traditional RAG by introducing a validation and decision layer, ensuring responses are reliable, traceable, and aligned with compliance requirements.
+
+Designed for compliance use cases where accuracy, traceability, and controlled AI behavior are critical.
 
 ---
 
 ## Key Concept
 
 **Traditional RAG:**  
-Retrieve → Generate → Return  
+Retrieve → Generate → Return
 
-**This Solution:**  
-Retrieve → Generate → Validate → Decide → Respond  
+**Agentic AI Flow:**  
+Retrieve → Generate → Validate → Decide → Respond
 
 ---
 
 ## Key Features
 
-- Retrieval-Augmented Generation (RAG) over regulatory PDFs  
-- Strict document-grounded answering  
+- Retrieval-Augmented Generation (RAG) over regulatory PDFs
+- Strict document-grounded responses
 - Validation layer:
   - `SUPPORTED`
   - `PARTIAL`
   - `UNSUPPORTED`
-- Confidence scoring  
-- Controlled AI fallback  
-- Explainable outputs with source traceability  
-
----
-
-## Why this is Agentic AI
-
-This solution is called **Agentic AI** because it does not simply retrieve and answer.
-
-It performs a sequence of controlled steps:
-
-1. Retrieves document evidence  
-2. Generates a strict answer  
-3. Validates answer support  
-4. Decides response strategy  
-5. Responds with confidence and traceability  
-
-This introduces **decision-making, control, and governance**, which are critical in compliance environments.
+- Confidence scoring
+- Controlled AI fallback
+- Explainable outputs with source traceability
 
 ---
 
@@ -75,7 +61,7 @@ This introduces **decision-making, control, and governance**, which are critical
        ↓
     Confidence + Sources
 
-  Designed for compliance use cases where accuracy, traceability, and controlled AI behavior are critical.
+Designed for compliance use cases where accuracy, traceability, and controlled AI behavior are critical.
 
 ---
 
@@ -97,60 +83,69 @@ F --> I[Confidence + Sources]
 G --> I
 H --> I
 ```
-
 ---
 
-## Solution Flow
+## Why this is Agentic AI
 
-Retrieve → Generate → Validate → Decide → Respond  
+This solution is called **Agentic AI** because it does not simply retrieve and answer.
+
+It performs a sequence of controlled steps:
+
+1. Retrieves document evidence
+2. Generates a strict answer
+3. Validates answer support
+4. Decides response strategy
+5. Responds with confidence and traceability
+
+This introduces **decision-making, control, and governance**, which are critical in compliance environments.
 
 ---
 
 ## Business Value
 
 **Problem**  
-Fragmented regulatory documents and low trust in AI outputs  
+Fragmented regulatory documents and low trust in AI outputs
 
 **Solution**  
-Agentic AI system with validation and controlled decision logic  
+Agentic AI system with validation and controlled decision logic
 
 **Impact**
-- Trusted decision-making  
-- Explainable AI  
-- Audit-ready traceability  
-- Reduced hallucination risk  
+- Trusted decision-making
+- Explainable AI
+- Audit-ready traceability
+- Reduced hallucination risk
 
 ---
 
 ## Tech Stack
 
-- Python  
-- Streamlit  
-- LangChain  
-- OpenAI  
-- FAISS  
-- PyPDF  
-- TextBlob  
+- Python
+- Streamlit
+- LangChain
+- OpenAI
+- FAISS
+- PyPDF
+- TextBlob
 
 ---
 
 ## How to Run
 
-1. Install dependencies  
+1. Install dependencies
 
-       pip install -r requirements.txt  
+       pip install -r requirements.txt
 
-2. Set API key  
+2. Set API key
 
-       export OPENAI_API_KEY="your_api_key"  
+       export OPENAI_API_KEY="your_api_key"
 
-3. Add PDFs to  
+3. Add PDFs to
 
-       /content/data  
+       /content/data
 
-4. Run app  
+4. Run app
 
-       streamlit run app.py  
+       streamlit run app.py
 
 ---
 
