@@ -98,7 +98,7 @@ flowchart TD
     F --> I[Confidence Score + Sources]
     G --> I
     H --> I
-```
+```mermaid
 
 ---
 
