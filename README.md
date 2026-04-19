@@ -122,13 +122,13 @@ Agentic AI system with validation and controlled decision logic
 
 ## Tech Stack
 
-- Python
-- Streamlit
-- LangChain
-- OpenAI
-- FAISS
-- PyPDF
-- TextBlob
+- Python (Core programming)
+- Streamlit (UI / Application layer)
+- LangChain (LLM orchestration)
+- OpenAI (LLM / Generation)
+- FAISS (Vector search / Retrieval)
+- PyPDF (Document ingestion)
+- TextBlob (Text processing / validation support)
 
 ---
 
