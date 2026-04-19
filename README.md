@@ -32,36 +32,38 @@ Retrieve → Generate → Validate → Decide → Govern → Respond
 
 ## Key Features
 
-- Retrieval-Augmented Generation (RAG) over regulatory PDFs
-- Strict document-grounded responses
-- Validation layer:
+- Retrieval-Augmented Generation (RAG) over regulatory and compliance documents  
+- Strict document-grounded responses  
+- Validation layer for response support classification:
   - `SUPPORTED`
   - `PARTIAL`
   - `UNSUPPORTED`
-- Confidence scoring
-- Controlled AI fallback
-- Explainable outputs with source traceability
+- Confidence scoring  
+- Controlled AI-assisted fallback for unsupported queries  
+- Explainable responses with source traceability  
 
 ---
 
-## Architecture Overview
+## Architecture
 
-    User Query
-       ↓
-    Safe Query Handling
-       ↓
-    Document Retrieval (FAISS + Embeddings)
-       ↓
-    Strict Answer Generation
-       ↓
-    Validation Layer
-       ├── SUPPORTED   → Document-Based Response
-       ├── PARTIAL     → Blend Document + AI Explanation
-       └── UNSUPPORTED → AI-Assisted Fallback
-       ↓
-    Confidence + Sources
+High-level flow of the Agentic AI decision pipeline:
 
-Designed for compliance use cases where accuracy, traceability, and controlled AI behavior are critical.
+User Query
+   ↓
+Safe Query Handling
+   ↓
+Document Retrieval (FAISS Vector Search + Embeddings)
+   ↓
+Strict Answer Generation
+   ↓
+Validation Layer (Response Support Classification)
+   ├── SUPPORTED   → Document-Based Response
+   ├── PARTIAL     → Blend Document + AI Explanation
+   └── UNSUPPORTED → AI-Assisted Fallback
+   ↓
+Confidence Scoring + Source Traceability
+
+Designed for compliance use cases where accuracy, traceability, and controlled AI behavior are essential.
 
 ---
 
@@ -71,18 +73,19 @@ Designed for compliance use cases where accuracy, traceability, and controlled A
 flowchart TD
 
 A[User Query] --> B[Safe Query Handling]
-B --> C[Retriever Layer<br/>FAISS + Embeddings]
+B --> C[Retrieval Layer<br/>FAISS + Embeddings]
 C --> D[Strict Answer Generator<br/>Document-Grounded]
-D --> E{Validation Layer}
+D --> E{Validation<br/>Support Classification}
 
 E -->|SUPPORTED| F[Document-Based Response]
 E -->|PARTIAL| G[Blend Document + AI Explanation]
 E -->|UNSUPPORTED| H[AI-Assisted Fallback]
 
-F --> I[Confidence + Sources]
+F --> I[Confidence Score + Source Traceability]
 G --> I
 H --> I
 ```
+
 ---
 
 ## Why this is Agentic AI
