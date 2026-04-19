@@ -79,7 +79,7 @@ D --> E{Validation<br/>Support Classification}
 
 E -->|SUPPORTED| F[Document-Based Response]
 E -->|PARTIAL| G[Blend Document + AI Explanation]
-E -->|UNSUPPORTED| H[AI-Assisted Response<br/>(Fallback)]
+E -->|UNSUPPORTED| H[AI-Assisted Fallback]
 
 F --> I[Confidence Score + Source Traceability]
 G --> I
@@ -87,7 +87,6 @@ H --> I
 ```
 
 ---
-
 
 ## Why this is Agentic AI
 
