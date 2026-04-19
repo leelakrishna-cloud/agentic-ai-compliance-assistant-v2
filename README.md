@@ -79,7 +79,7 @@ D --> E{Validation<br/>Support Classification}
 
 E -->|SUPPORTED| F[Document-Based Response]
 E -->|PARTIAL| G[Blend Document + AI Explanation]
-E -->|UNSUPPORTED| H[AI-Assisted Fallback]
+E -->|UNSUPPORTED| H[AI-Assisted Response<br/>(Fallback)]
 
 F --> I[Confidence Score + Source Traceability]
 G --> I
